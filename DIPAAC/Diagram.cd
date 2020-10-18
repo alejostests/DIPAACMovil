@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="DIPAAC.Models.Interfaces.Persona">
+    <Position X="6.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAABAAAAAAgAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Interfaces\Persona.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DIPAAC.Models.Response">
+    <Position X="12.25" Y="0.5" Width="1.5" />
+    <NestedTypes>
+      <Enum Name="DIPAAC.Models.Response.ResponseCode" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Models\Response.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAAgAAAAAAAAAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>Models\Response.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DIPAAC.ViewModels.CuestionarioViewModel">
+    <Position X="8.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACoAAAAAAAAAAAAAAAAAAAAIAAAAABAAAEAAAAEAQ=</HashCode>
+      <FileName>ViewModels\CuestionarioViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DIPAAC.ViewModels.RespuestaViewModel">
+    <Position X="8.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAGAAAAAAAAAgAAAAAAAAAAAAAAAAAAEBAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\RespuestaViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DIPAAC.ViewModels.UsuarioViewModel">
+    <Position X="6.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAIAAAAAAAAAAAAAAAAAAIAAAAAEAAA=</HashCode>
+      <FileName>ViewModels\UsuarioViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DIPAAC.Program">
+    <Position X="10.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DIPAAC.Startup">
+    <Position X="10.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>Startup.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="DIPAAC.Models.TipoCuestionario">
+    <Position X="8.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAgABAIAAAAAAAAAAAAIAAgAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\TipoCuestionario.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

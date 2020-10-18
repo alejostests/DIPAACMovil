@@ -1,0 +1,17 @@
+C:\Users\aleja\Documents\Repos\DIPAAC\DIPAAC.DataAccess\obj\Debug\netcoreapp3.1\DIPAAC.DataAccess.csprojAssemblyReference.cache
+C:\Users\aleja\Documents\Repos\DIPAAC\DIPAAC.DataAccess\obj\Debug\netcoreapp3.1\DIPAAC.DataAccess.AssemblyInfoInputs.cache
+C:\Users\aleja\Documents\Repos\DIPAAC\DIPAAC.DataAccess\obj\Debug\netcoreapp3.1\DIPAAC.DataAccess.AssemblyInfo.cs
+C:\Users\aleja\Documents\Repos\DIPAAC\DIPAAC.DataAccess\obj\Debug\netcoreapp3.1\DIPAAC.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\aleja\Documents\Repos\DIPAAC\DIPAAC.DataAccess\bin\Debug\netcoreapp3.1\DIPAAC.DataAccess.deps.json
+C:\Users\aleja\Documents\Repos\DIPAAC\DIPAAC.DataAccess\bin\Debug\netcoreapp3.1\DIPAAC.DataAccess.dll
+C:\Users\aleja\Documents\Repos\DIPAAC\DIPAAC.DataAccess\bin\Debug\netcoreapp3.1\DIPAAC.DataAccess.runtimeconfig.json
+C:\Users\aleja\Documents\Repos\DIPAAC\DIPAAC.DataAccess\bin\Debug\netcoreapp3.1\DIPAAC.DataAccess.runtimeconfig.dev.json
+C:\Users\aleja\Documents\Repos\DIPAAC\DIPAAC.DataAccess\obj\Debug\netcoreapp3.1\DIPAAC.DataAccess.genruntimeconfig.cache
+C:\Users\aleja\Documents\Repos\DIPAAC\DIPAAC.DataAccess\bin\Debug\netcoreapp3.1\DIPAAC.DataAccess.pdb
+C:\Users\aleja\Documents\Repos\DIPAAC\DIPAAC.DataAccess\obj\Debug\netcoreapp3.1\DIPAAC.DataAccess.dll
+C:\Users\aleja\Documents\Repos\DIPAAC\DIPAAC.DataAccess\obj\Debug\netcoreapp3.1\DIPAAC.DataAccess.pdb
+C:\Users\aleja\Documents\Repos\DIPAAC\DIPAAC\bin\Debug\netcoreapp3.1\DIPAAC.DataAccess.deps.json
+C:\Users\aleja\Documents\Repos\DIPAAC\DIPAAC\bin\Debug\netcoreapp3.1\DIPAAC.DataAccess.runtimeconfig.json
+C:\Users\aleja\Documents\Repos\DIPAAC\DIPAAC\bin\Debug\netcoreapp3.1\DIPAAC.DataAccess.runtimeconfig.dev.json
+C:\Users\aleja\Documents\Repos\DIPAAC\DIPAAC\bin\Debug\netcoreapp3.1\DIPAAC.DataAccess.dll
+C:\Users\aleja\Documents\Repos\DIPAAC\DIPAAC\bin\Debug\netcoreapp3.1\DIPAAC.DataAccess.pdb

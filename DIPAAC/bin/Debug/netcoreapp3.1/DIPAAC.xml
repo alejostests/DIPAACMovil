@@ -1,0 +1,339 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DIPAAC</name>
+    </assembly>
+    <members>
+        <member name="T:DIPAAC.Configuration.ConfigureSwaggerOptions">
+            <summary>
+                Configures the Swagger generation options.
+            </summary>
+        </member>
+        <member name="M:DIPAAC.Configuration.ConfigureSwaggerOptions.#ctor(Microsoft.AspNetCore.Mvc.ApiExplorer.IApiVersionDescriptionProvider)">
+            <summary>
+                Initializes a new instance of the <see cref="T:DIPAAC.Configuration.ConfigureSwaggerOptions" /> class.
+            </summary>
+            <param name="provider">The <see cref="T:Microsoft.AspNetCore.Mvc.ApiExplorer.IApiVersionDescriptionProvider">provider</see> used to generate Swagger documents</param>
+        </member>
+        <member name="M:DIPAAC.Configuration.ConfigureSwaggerOptions.Configure(Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenOptions)">
+            <inheritdoc />
+        </member>
+        <member name="T:DIPAAC.Configuration.SwaggerDefaultValues">
+            <inheritdoc />
+        </member>
+        <member name="M:DIPAAC.Configuration.SwaggerDefaultValues.Apply(Microsoft.OpenApi.Models.OpenApiOperation,Swashbuckle.AspNetCore.SwaggerGen.OperationFilterContext)">
+            <inheritdoc />
+        </member>
+        <member name="T:DIPAAC.Controllers.CuestionariosController">
+            <summary>
+                Expose methods to interact with questionnaires data
+            </summary>
+        </member>
+        <member name="M:DIPAAC.Controllers.CuestionariosController.#ctor(DataAccess.Repositories.Interfaces.ICuestionarioRepository)">
+            <summary>
+                Ctor.
+            </summary>
+            <param name="cuestionarioRepository">Repository to interact with questionnaires data</param>
+        </member>
+        <member name="M:DIPAAC.Controllers.CuestionariosController.GetById(System.Int32)">
+            <summary>
+                Get a questionnaire by id
+            </summary>
+            <param name="id">Questionnaire id</param>
+            <returns>List of questionnaires</returns>
+        </member>
+        <member name="M:DIPAAC.Controllers.CuestionariosController.Get(System.Int32)">
+            <summary>
+                Get questionnaires by user id
+            </summary>
+            <param name="userId">User id</param>
+            <returns>List of questionnaires</returns>
+        </member>
+        <member name="M:DIPAAC.Controllers.CuestionariosController.Post(DIPAAC.ViewModels.CreateCuestionarioViewModel)">
+            <summary>
+                Create a new questionnaire
+            </summary>
+            <param name="cuestionario">Questionnaire to create</param>
+            <returns>Response according with process status</returns>
+        </member>
+        <member name="T:DIPAAC.Controllers.UsuariosController">
+            <summary>
+                Expose methods to interact with users data
+            </summary>
+        </member>
+        <member name="M:DIPAAC.Controllers.UsuariosController.#ctor(DataAccess.Repositories.Interfaces.IUsuarioRepository)">
+            <summary>
+                Ctor.
+            </summary>
+            <param name="usuarioRepository">Repository to interact with users data</param>
+        </member>
+        <member name="M:DIPAAC.Controllers.UsuariosController.CreateUser(DIPAAC.ViewModels.CreateUsuarioViewModel)">
+            <summary>
+                Create a new user
+            </summary>
+            <param name="usuario">User to create</param>
+            <returns>Response according with process status</returns>
+        </member>
+        <member name="M:DIPAAC.Controllers.UsuariosController.Login(System.String,System.String)">
+            <summary>
+                Log in the user against the data base
+            </summary>
+            <param name="userName">User name</param>
+            <param name="password">User password</param>
+            <returns>Response according with process status</returns>
+        </member>
+        <member name="M:DIPAAC.Controllers.UsuariosController.RecoverPassword(System.String,System.String)">
+            <summary>
+                Retrieve a user's password
+            </summary>
+            <param name="userName">User name</param>
+            <param name="password">User password</param>
+            <returns>Response according with process status</returns>
+        </member>
+        <member name="M:DIPAAC.Controllers.UsuariosController.UpdateUser(DIPAAC.ViewModels.UpdateUsuarioViewModel)">
+            <summary>
+                Update an user
+            </summary>
+            <param name="usuario">User to update</param>
+            <returns>Response according with process status</returns>
+        </member>
+        <member name="T:DIPAAC.Models.Interfaces.Persona">
+            <summary>
+                Define the structure of a person
+            </summary>
+        </member>
+        <member name="P:DIPAAC.Models.Interfaces.Persona.NombreCompleto">
+            <summary>
+                Full name
+            </summary>
+        </member>
+        <member name="P:DIPAAC.Models.Interfaces.Persona.Edad">
+            <summary>
+                Age
+            </summary>
+        </member>
+        <member name="T:DIPAAC.Models.Response">
+            <summary>
+                Class that defines if the response of a service or controller is successfully or not
+            </summary>
+        </member>
+        <member name="T:DIPAAC.Models.Response.ResponseCode">
+            <summary>
+                Types of responses
+            </summary>
+        </member>
+        <member name="F:DIPAAC.Models.Response.ResponseCode.Ok">
+            <summary>
+                OK if is successfully
+            </summary>
+        </member>
+        <member name="F:DIPAAC.Models.Response.ResponseCode.Error">
+            <summary>
+                Error if is not successfully
+            </summary>
+        </member>
+        <member name="P:DIPAAC.Models.Response.Code">
+            <summary>
+                Code response
+            </summary>
+        </member>
+        <member name="P:DIPAAC.Models.Response.Message">
+            <summary>
+                Message response
+            </summary>
+        </member>
+        <member name="P:DIPAAC.Models.Response.Description">
+            <summary>
+                Description response
+            </summary>
+        </member>
+        <member name="T:DIPAAC.Services.EncryptionService">
+            <summary>
+                Service that encrypts information
+            </summary>
+        </member>
+        <member name="M:DIPAAC.Services.EncryptionService.GetSHA256(System.String)">
+            <summary>
+                Encrypts a string
+            </summary>
+            <param name="str">String to encrypt</param>
+            <returns>Encrypted string</returns>
+        </member>
+        <member name="T:DIPAAC.Startup">
+            <summary>
+                Class that initializes the configurations project
+            </summary>
+        </member>
+        <member name="M:DIPAAC.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+                Initialize the configuration
+            </summary>
+            <param name="configuration">Configuration to initialize</param>
+        </member>
+        <member name="M:DIPAAC.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+                Configure project's services
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="M:DIPAAC.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment,Microsoft.AspNetCore.Mvc.ApiExplorer.IApiVersionDescriptionProvider)">
+            <summary>
+                Configure project's services and dependencies
+            </summary>
+            <param name="app">App of the execution project</param>
+            <param name="env">Context of the execution project</param>
+            <param name="provider">Api version provider</param>
+        </member>
+        <member name="T:DIPAAC.ViewModels.CreateCuestionarioViewModel">
+            <summary>
+                Class to create a questionnaire
+            </summary>
+        </member>
+        <member name="P:DIPAAC.ViewModels.CreateCuestionarioViewModel.Tipo">
+            <summary>
+                Questionnaire type: <br />
+                0 - Ideognostic
+                1 - Operational
+                2 - Verbal
+            </summary>
+        </member>
+        <member name="P:DIPAAC.ViewModels.CreateCuestionarioViewModel.UsuarioId">
+            <summary>
+                User id
+            </summary>
+        </member>
+        <member name="P:DIPAAC.ViewModels.CreateCuestionarioViewModel.Respuestas">
+            <summary>
+                List of answers
+            </summary>
+        </member>
+        <member name="T:DIPAAC.ViewModels.CreateRespuestaViewModel">
+            <summary>
+                Class for creating a questionnaire answer
+            </summary>
+        </member>
+        <member name="P:DIPAAC.ViewModels.CreateRespuestaViewModel.EsCorrecta">
+            <summary>
+                Is correct
+            </summary>
+        </member>
+        <member name="P:DIPAAC.ViewModels.CreateRespuestaViewModel.RespuestaIngresada">
+            <summary>
+                Answer entered
+            </summary>
+        </member>
+        <member name="P:DIPAAC.ViewModels.CreateRespuestaViewModel.Pregunta">
+            <summary>
+                Question
+            </summary>
+        </member>
+        <member name="T:DIPAAC.ViewModels.CreateUsuarioViewModel">
+            <summary>
+                Class to create an user
+            </summary>
+        </member>
+        <member name="P:DIPAAC.ViewModels.CreateUsuarioViewModel.NombreCompleto">
+            <summary>
+                Full name
+            </summary>
+        </member>
+        <member name="P:DIPAAC.ViewModels.CreateUsuarioViewModel.NombreUsuario">
+            <summary>
+                User name
+            </summary>
+        </member>
+        <member name="P:DIPAAC.ViewModels.CreateUsuarioViewModel.Edad">
+            <summary>
+                Age
+            </summary>
+        </member>
+        <member name="P:DIPAAC.ViewModels.CreateUsuarioViewModel.Contraseña">
+            <summary>
+                Password
+            </summary>
+        </member>
+        <member name="P:DIPAAC.ViewModels.CreateUsuarioViewModel.ContraseñaConfirmada">
+            <summary>
+                Confirmed password
+            </summary>
+        </member>
+        <member name="T:DIPAAC.ViewModels.ReturnUserViewModel">
+            <summary>
+                Class to return user information
+            </summary>
+        </member>
+        <member name="P:DIPAAC.ViewModels.ReturnUserViewModel.Id">
+            <summary>
+                User id
+            </summary>
+        </member>
+        <member name="P:DIPAAC.ViewModels.ReturnUserViewModel.NombreUsuario">
+            <summary>
+                User name
+            </summary>
+        </member>
+        <member name="P:DIPAAC.ViewModels.ReturnUserViewModel.NombreCompleto">
+            <summary>
+                Full name
+            </summary>
+        </member>
+        <member name="P:DIPAAC.ViewModels.ReturnUserViewModel.Edad">
+            <summary>
+                Age
+            </summary>
+        </member>
+        <member name="T:DIPAAC.ViewModels.UpdateUsuarioViewModel">
+            <summary>
+                Class to update an user
+            </summary>
+        </member>
+        <member name="P:DIPAAC.ViewModels.UpdateUsuarioViewModel.Id">
+            <summary>
+                User id
+            </summary>
+        </member>
+        <member name="P:DIPAAC.ViewModels.UpdateUsuarioViewModel.NombreCompleto">
+            <summary>
+                Full name
+            </summary>
+        </member>
+        <member name="P:DIPAAC.ViewModels.UpdateUsuarioViewModel.NombreUsuario">
+            <summary>
+                User name
+            </summary>
+        </member>
+        <member name="P:DIPAAC.ViewModels.UpdateUsuarioViewModel.Edad">
+            <summary>
+                Age
+            </summary>
+        </member>
+        <member name="P:DIPAAC.ViewModels.UpdateUsuarioViewModel.Contraseña">
+            <summary>
+                Password
+            </summary>
+        </member>
+        <member name="P:DIPAAC.ViewModels.UpdateUsuarioViewModel.ContraseñaConfirmada">
+            <summary>
+                Confirmed password
+            </summary>
+        </member>
+        <member name="T:DIPAAC.ViewModels.UsuarioViewModel">
+            <inheritdoc />
+        </member>
+        <member name="P:DIPAAC.ViewModels.UsuarioViewModel.Id">
+            <summary>
+                User id
+            </summary>
+        </member>
+        <member name="P:DIPAAC.ViewModels.UsuarioViewModel.NombreUsuario">
+            <summary>
+                User name
+            </summary>
+        </member>
+        <member name="P:DIPAAC.ViewModels.UsuarioViewModel.Contraseña">
+            <summary>
+                Password
+            </summary>
+        </member>
+    </members>
+</doc>
